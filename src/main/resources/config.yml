@@ -1,0 +1,726 @@
+settings:
+  config-version: 1.0.0
+  broadcast-punishments: true
+  broadcast-unbans: true
+  broadcast-kicks: true
+  broadcast-mutes: true
+  silent-mute-shows-receipt-to-player: true
+
+gui:
+  fill-glass: true
+  border-glass: true
+
+ban-screens:
+  ban:
+    both:
+      - "&c&l===================================="
+      - "&cYou have been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYou have been permanently banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYou have been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYou have been permanently banned!"
+      - "&c&l===================================="
+
+  tban:
+    both:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+
+  ipban:
+    both:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - "&c&l===================================="
+
+  iptban:
+    both:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+
+  sban:
+    both:
+      - "&c&l===================================="
+      - "&cYou have been banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYou have been banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYou have been banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYou have been banned!"
+      - "&c&l===================================="
+
+  stban:
+    both:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYou have been temporarily banned!"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+
+  ipsban:
+    both:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYour IP has been permanently banned!"
+      - "&c&l===================================="
+
+  ipstban:
+    both:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    whopunished-only:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Banned by: &f{banned_by}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    reason-only:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - ""
+      - "&7Reason: &f{reason}"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+    neither:
+      - "&c&l===================================="
+      - "&cYour IP has been temporarily banned!"
+      - "&7Time left: &f{time_left}"
+      - "&c&l===================================="
+
+mute-messages:
+  mute:
+    both:
+      - "&cYou are muted! &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYou are muted!"
+    reason-only:
+      - "&cYou are muted! &7Reason: &f{reason}"
+    neither:
+      - "&cYou are muted!"
+
+  tmute:
+    both:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left}"
+    reason-only:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    neither:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left}"
+
+  ipmute:
+    both:
+      - "&cYour IP is muted! &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYour IP is muted!"
+    reason-only:
+      - "&cYour IP is muted! &7Reason: &f{reason}"
+    neither:
+      - "&cYour IP is muted!"
+
+  iptmute:
+    both:
+      - "&cYour IP is temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYour IP is temporarily muted! &7Time left: &f{time_left}"
+    reason-only:
+      - "&cYour IP is temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    neither:
+      - "&cYour IP is temporarily muted! &7Time left: &f{time_left}"
+
+  smute:
+    both:
+      - "&cYou are muted! &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYou are muted!"
+    reason-only:
+      - "&cYou are muted! &7Reason: &f{reason}"
+    neither:
+      - "&cYou are muted!"
+
+  stmute:
+    both:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    whopunished-only:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left}"
+    reason-only:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left} &7Reason: &f{reason}"
+    neither:
+      - "&cYou are temporarily muted! &7Time left: &f{time_left}"
+
+mute-receipt:
+  mute:
+    both:
+      - "&cYOU HAVE BEEN MUTED"
+      - "&7Reason: &3{reason}"
+      - "&7Apeal at: &3<Discord>"
+    whopunished-only:
+      - "&cYou have been muted by &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{reason}"
+    neither:
+      - "&cYou have been muted."
+
+  tmute:
+    both:
+      - "&cYOU HAVE BEEN MUTED FOR {time_left}"
+      - "&7Reason: &3{reason}"
+      - "&7Apeal at: &3<Discord>"
+    whopunished-only:
+      - "&cYou have been muted for &f{time_left} &cby &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{time_left} &cfor &f{reason}"
+    neither:
+      - "&cYou have been muted for &f{time_left}"
+
+  ipmute:
+    both:
+      - "&cYou have been muted by &f{whomuted} &cfor &f{reason}"
+    whopunished-only:
+      - "&cYou have been muted by &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{reason}"
+    neither:
+      - "&cYou have been muted."
+
+  iptmute:
+    both:
+      - "&cYou have been muted for &f{time_left} &cby &f{whomuted} &cfor &f{reason}"
+    whopunished-only:
+      - "&cYou have been muted for &f{time_left} &cby &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{time_left} &cfor &f{reason}"
+    neither:
+      - "&cYou have been muted for &f{time_left}"
+
+  smute:
+    both:
+      - "&cYou have been muted by &f{whomuted} &cfor &f{reason}"
+    whopunished-only:
+      - "&cYou have been muted by &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{reason}"
+    neither:
+      - "&cYou have been muted."
+
+  stmute:
+    both:
+      - "&cYou have been muted for &f{time_left} &cby &f{whomuted} &cfor &f{reason}"
+    whopunished-only:
+      - "&cYou have been muted for &f{time_left} &cby &f{whomuted}"
+    reason-only:
+      - "&cYou have been muted for &f{time_left} &cfor &f{reason}"
+    neither:
+      - "&cYou have been muted for &f{time_left}"
+
+kick-screens:
+  both:
+    - "&c&l===================================="
+    - "&cYou have been kicked!"
+    - ""
+    - "&7Reason: &f{reason}"
+    - "&7Kicked by: &f{kicked_by}"
+    - "&c&l===================================="
+  whopunished-only:
+    - "&c&l===================================="
+    - "&cYou have been kicked!"
+    - ""
+    - "&7Kicked by: &f{kicked_by}"
+    - "&c&l===================================="
+  reason-only:
+    - "&c&l===================================="
+    - "&cYou have been kicked!"
+    - ""
+    - "&7Reason: &f{reason}"
+    - "&c&l===================================="
+  neither:
+    - "&c&l===================================="
+    - "&cYou have been kicked!"
+    - "&c&l===================================="
+
+unmute-messages:
+  both:
+    - "&aYou have been unmuted by &f{unmuted_by}&a! Reason: &f{reason}"
+  whopunished-only:
+    - "&aYou have been unmuted by &f{unmuted_by}&a!"
+  reason-only:
+    - "&aYou have been unmuted! Reason: &f{reason}"
+  neither:
+    - "&aYou have been unmuted!"
+
+unban-confirmation:
+  both: "&aPlayer &f{player} &ahas been unbanned by &f{unbanned_by}&a. Reason: &f{reason}"
+  whopunished-only: "&aPlayer &f{player} &ahas been unbanned by &f{unbanned_by}&a."
+  reason-only: "&aPlayer &f{player} &ahas been unbanned. Reason: &f{reason}"
+  neither: "&aPlayer &f{player} &ahas been unbanned."
+
+broadcasts:
+  ban:
+    both: "&c{player} &ehas been banned by &c{banned_by} &efor &c{reason}"
+    whopunished-only: "&8[&cBan&8] &f{player} &7has been banned &7by &f{banned_by}"
+    reason-only: "&8[&cBan&8] &f{player} &7has been banned &7for &c{reason}"
+    neither: "&8[&cBan&8] &f{player} &7has been banned"
+
+  tban:
+    both: "&c{player} &ehas been BANNED for &c{time} &eby &c{banned_by} &efor &c{reason}"
+    whopunished-only: "&8[&cTBan&8] &f{player} &7has been temp-banned for &f{time} &7by &f{banned_by}"
+    reason-only: "&8[&cTBan&8] &f{player} &7has been temp-banned for &f{time} &7for &c{reason}"
+    neither: "&8[&cTBan&8] &f{player} &7has been temp-banned"
+
+  ipban:
+    both: "&c{player} &ehas been IP-BANNED by &c{banned_by} &efor &c{reason}"
+    whopunished-only: "&8[&cIPBan&8] &f{player} &7has been IP-banned &7by &f{banned_by}"
+    reason-only: "&8[&cIPBan&8] &f{player} &7has been IP-banned &7for &c{reason}"
+    neither: "&8[&cIPBan&8] &f{player} &7has been IP-banned"
+
+  iptban:
+    both: "&c{player} &ehas been IP-BANNED for &c{time} &eby &c{banned_by} &efor &c{reason}"
+    whopunished-only: "&8[&cIPTBan&8] &f{player} &7has been IP-temp-banned for &f{time} &7by &f{banned_by}"
+    reason-only: "&8[&cIPTBan&8] &f{player} &7has been IP-temp-banned for &f{time} &7for &c{reason}"
+    neither: "&8[&cIPTBan&8] &f{player} &7has been IP-temp-banned"
+
+  sban:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  stban:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  ipsban:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  ipstban:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  unban:
+    both: "&c{player} &ehas been UNBANNED &eby &c{unbanned_by} &efor &c{reason}"
+    whopunished-only: "&8[&cUnban&8] &f{player} &7has been unbanned &7by &f{unbanned_by}"
+    reason-only: "&8[&cUnban&8] &f{player} &7has been unbanned &7for &c{reason}"
+    neither: "&8[&cUnban&8] &f{player} &7has been unbanned"
+
+  sunban:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  kick:
+    both: "&c{player} &ehas been KICKED &eby &c{kicked_by} &efor &c{reason}"
+    whopunished-only: "&8[&cKick&8] &f{player} &7has been kicked &7by &f{kicked_by}"
+    reason-only: "&8[&cKick&8] &f{player} &7has been kicked &7for &c{reason}"
+    neither: "&8[&cKick&8] &f{player} &7has been kicked"
+
+  mute:
+    both: "&c{player} &ehas been MUTED &eby &c{whomuted} &efor &c{reason}"
+    whopunished-only: "&8[&cMute&8] &f{player} &7has been muted &7by &f{whomuted}"
+    reason-only: "&8[&cMute&8] &f{player} &7has been muted &7for &c{reason}"
+    neither: "&8[&cMute&8] &f{player} &7has been muted"
+
+  tmute:
+    both: "&c{player} &ehas been MUTED for &c{time} &eby &c{whomuted} &efor &c{reason}"
+    whopunished-only: "&8[&cTMute&8] &f{player} &7has been temp-muted for &f{time} &7by &f{whomuted}"
+    reason-only: "&8[&cTMute&8] &f{player} &7has been temp-muted for &f{time} &7for &c{reason}"
+    neither: "&8[&cTMute&8] &f{player} &7has been temp-muted"
+
+  ipmute:
+    both: "&c{player} &ehas been IP-MUTED &eby &c{whomuted} &efor &c{reason}"
+    whopunished-only: "&8[&cIPMute&8] &f{player} &7has been IP-muted &7by &f{whomuted}"
+    reason-only: "&8[&cIPMute&8] &f{player} &7has been IP-muted &7for &c{reason}"
+    neither: "&8[&cIPMute&8] &f{player} &7has been IP-muted"
+
+  iptmute:
+    both: "&c{player} &ehas been MUTED for &c{time} &eby &c{whomuted} &efor &c{reason}"
+    whopunished-only: "&8[&cIPTMute&8] &f{player} &7has been IP-temp-muted for &f{time} &7by &f{whomuted}"
+    reason-only: "&8[&cIPTMute&8] &f{player} &7has been IP-temp-muted for &f{time} &7for &c{reason}"
+    neither: "&8[&cIPTMute&8] &f{player} &7has been IP-temp-muted"
+
+  smute:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  stmute:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+  unmute:
+    both: "&c{player} &ehas been UNMUTED by &c{unmuted_by} &efor &c{reason}"
+    whopunished-only: "&8[&cUnmute&8] &f{player} &7has been unmuted &7by &f{unmuted_by}"
+    reason-only: "&8[&cUnmute&8] &f{player} &7has been unmuted &7for &c{reason}"
+    neither: "&8[&cUnmute&8] &f{player} &7has been unmuted"
+
+  sunmute:
+    both: ""
+    whopunished-only: ""
+    reason-only: ""
+    neither: ""
+
+silent-admin-messages:
+  ban:
+    both: "&7[SILENT] &f{player} &7was silently banned &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently banned &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently banned &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently banned"
+
+  tban:
+    both: "&7[SILENT] &f{player} &7was silently temp-banned for &f{time} &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently temp-banned for &f{time} &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently temp-banned for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently temp-banned"
+
+  ipban:
+    both: "&7[SILENT] &f{player} &7was silently IP-banned &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently IP-banned &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently IP-banned &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently IP-banned"
+
+  iptban:
+    both: "&7[SILENT] &f{player} &7was silently IP-temp-banned for &f{time} &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently IP-temp-banned for &f{time} &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently IP-temp-banned for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently IP-temp-banned"
+
+  sban:
+    both: "&7[SILENT] &f{player} &7was silently  &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  stban:
+    both: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  ipsban:
+    both: "&7[SILENT] &f{player} &7was silently  &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  ipstban:
+    both: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{banned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{banned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  unban:
+    both: "&7[SILENT] &f{player} &7was silently unbanned &7by &f{unbanned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently unbanned &7by &f{unbanned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently unbanned &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently unbanned"
+
+  sunban:
+    both: "&7[SILENT] &f{player} &7was silently  &7by &f{unbanned_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  &7by &f{unbanned_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  kick:
+    both: "&7[SILENT] &f{player} &7was silently kicked &7by &f{kicked_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently kicked &7by &f{kicked_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently kicked &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently kicked"
+
+  mute:
+    both: "&7[SILENT] &f{player} &7was silently muted &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently muted &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently muted &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently muted"
+
+  tmute:
+    both: "&7[SILENT] &f{player} &7was silently temp-muted for &f{time} &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently temp-muted for &f{time} &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently temp-muted for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently temp-muted"
+
+  ipmute:
+    both: "&7[SILENT] &f{player} &7was silently IP-muted &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently IP-muted &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently IP-muted &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently IP-muted"
+
+  iptmute:
+    both: "&7[SILENT] &f{player} &7was silently IP-temp-muted for &f{time} &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently IP-temp-muted for &f{time} &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently IP-temp-muted for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently IP-temp-muted"
+
+  smute:
+    both: "&7[SILENT] &f{player} &7was silently  &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  stmute:
+    both: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{whomuted} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7by &f{whomuted}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  for &f{time} &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+  unmute:
+    both: "&7[SILENT] &f{player} &7was silently unmuted &7by &f{unmuted_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently unmuted &7by &f{unmuted_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently unmuted &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently unmuted"
+
+  sunmute:
+    both: "&7[SILENT] &f{player} &7was silently  &7by &f{unmuted_by} &7for &c{reason}"
+    whopunished-only: "&7[SILENT] &f{player} &7was silently  &7by &f{unmuted_by}"
+    reason-only: "&7[SILENT] &f{player} &7was silently  &7for &c{reason}"
+    neither: "&7[SILENT] &f{player} &7was silently "
+
+admin-confirmations:
+  ban:
+    both: "&aBanned &f{player} &apermanently for &f{reason}"
+    whopunished-only: "&aBanned &f{player} &apermanently"
+    reason-only: "&aBanned &f{player} &apermanently for &f{reason}"
+    neither: "&aBanned &f{player} &apermanently"
+
+  tban:
+    both: "&aTemp-banned &f{player} &afor &f{time} &a- &f{reason}"
+    whopunished-only: "&aTemp-banned &f{player} &afor &f{time}"
+    reason-only: "&aTemp-banned &f{player} &afor &f{time} &a- &f{reason}"
+    neither: "&aTemp-banned &f{player} &afor &f{time}"
+
+  ipban:
+    both: "&aIP-banned &f{player} &apermanently for &f{reason}"
+    whopunished-only: "&aIP-banned &f{player} &apermanently"
+    reason-only: "&aIP-banned &f{player} &apermanently for &f{reason}"
+    neither: "&aIP-banned &f{player} &apermanently"
+
+  iptban:
+    both: "&aIP-temp-banned &f{player} &afor &f{time} &a- &f{reason}"
+    whopunished-only: "&aIP-temp-banned &f{player} &afor &f{time}"
+    reason-only: "&aIP-temp-banned &f{player} &afor &f{time} &a- &f{reason}"
+    neither: "&aIP-temp-banned &f{player} &afor &f{time}"
+
+  unban:
+    both: "&aUnbanned &f{player} &a- &f{reason}"
+    whopunished-only: "&aUnbanned &f{player}"
+    reason-only: "&aUnbanned &f{player} &a- &f{reason}"
+    neither: "&aUnbanned &f{player}"
+
+  kick:
+    both: "&aKicked &f{player} &a- &f{reason}"
+    whopunished-only: "&aKicked &f{player}"
+    reason-only: "&aKicked &f{player} &a- &f{reason}"
+    neither: "&aKicked &f{player}"
+
+  mute:
+    both: "&aMuted &f{player} &a- &f{reason}"
+    whopunished-only: "&aMuted &f{player}"
+    reason-only: "&aMuted &f{player} &a- &f{reason}"
+    neither: "&aMuted &f{player}"
+
+  tmute:
+    both: "&aTemp-muted &f{player} &afor &f{time} &a- &f{reason}"
+    whopunished-only: "&aTemp-muted &f{player} &afor &f{time}"
+    reason-only: "&aTemp-muted &f{player} &afor &f{time} &a- &f{reason}"
+    neither: "&aTemp-muted &f{player} &afor &f{time}"
+
+  ipmute:
+    both: "&aIP-muted &f{player} &a- &f{reason}"
+    whopunished-only: "&aIP-muted &f{player}"
+    reason-only: "&aIP-muted &f{player} &a- &f{reason}"
+    neither: "&aIP-muted &f{player}"
+
+  iptmute:
+    both: "&aIP-temp-muted &f{player} &afor &f{time} &a- &f{reason}"
+    whopunished-only: "&aIP-temp-muted &f{player} &afor &f{time}"
+    reason-only: "&aIP-temp-muted &f{player} &afor &f{time} &a- &f{reason}"
+    neither: "&aIP-temp-muted &f{player} &afor &f{time}"
+
+  unmute:
+    both: "&aUnmuted &f{player} &a- &f{reason}"
+    whopunished-only: "&aUnmuted &f{player}"
+    reason-only: "&aUnmuted &f{player} &a- &f{reason}"
+    neither: "&aUnmuted &f{player}"
+
+errors:
+  player-not-found: "&cPlayer &f{player} &cnot found."
+  invalid-username: "&c&f{player} &cis not a valid Minecraft username. Usernames must be 3-16 characters and contain only letters, numbers, and underscores."
+  player-not-online: "&cPlayer &f{player} &cis not online."
+  no-permission: "&cYou don't have permission to use this command."
+  already-banned: "&cPlayer &f{player} &cis already banned."
+  already-muted: "&cPlayer &f{player} &cis already muted."
+  not-banned: "&cPlayer &f{player} &cis not banned."
+  not-muted: "&cPlayer &f{player} &cis not muted."
+  invalid-time: "&cInvalid time format. Use like: 90d, 12h, 30m, 1y. Combinations like 1d6h are allowed."
+  usage-error: "&cUsage: {usage}"
+  player-only: "&cThis command can only be used in-game."
+
+anti-spam:
+  enabled: true
+  count-in-time: 4
+  time: 4
+  punish: "/tmute {spammer} 1d AntiSpammerBot Spamming"
+
+muted-blocked-commands:
+  - msg
+  - tell
+  - w
+  - whisper
+  - r
+  - reply
+  - me
+  - say
+  - broadcast
+  - mail
+  - email
+  - message
+  - pm

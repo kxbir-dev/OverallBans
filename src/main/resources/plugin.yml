@@ -1,0 +1,200 @@
+name: OverallBans
+version: ${project.version}
+main: OverallBans.PunishmentPlugin
+author: kxbir
+description: A complete, precise punishment plugin for Spigot 1.8.8
+
+commands:
+  ban:
+    description: Permanently ban a player
+    usage: /ban <player> [by:whomuted] [reason]
+    permission: punishment.ban
+  tban:
+    description: Temporarily ban a player
+    usage: /tban <player> <time> [by:whomuted] [reason]
+    permission: punishment.tban
+  ipban:
+    description: Permanently IP-ban a player
+    usage: /ipban <player> [by:whomuted] [reason]
+    permission: punishment.ipban
+  iptban:
+    description: Temporarily IP-ban a player
+    usage: /iptban <player> <time> [by:whomuted] [reason]
+    permission: punishment.iptban
+  sban:
+    description: Silently permanently ban a player
+    usage: /sban <player> [by:whomuted] [reason]
+    permission: punishment.sban
+  stban:
+    description: Silently temporarily ban a player
+    usage: /stban <player> <time> [by:whomuted] [reason]
+    permission: punishment.stban
+  ipsban:
+    description: Silently permanently IP-ban a player
+    usage: /ipsban <player> [by:whomuted] [reason]
+    permission: punishment.ipsban
+  ipstban:
+    description: Silently temporarily IP-ban a player
+    usage: /ipstban <player> <time> [by:whomuted] [reason]
+    permission: punishment.ipstban
+  unban:
+    description: Unban a player
+    usage: /unban <player> [by:unbanned_by] [reason]
+    permission: punishment.unban
+  sunban:
+    description: Silently unban a player
+    usage: /sunban <player> [by:unbanned_by]
+    permission: punishment.sunban
+  kick:
+    description: Kick a player
+    usage: /kick <player> [by:kicked_by] [reason]
+    permission: punishment.kick
+  mute:
+    description: Mute a player
+    usage: /mute <player> [by:whomuted] [reason]
+    permission: punishment.mute
+  tmute:
+    description: Temporarily mute a player
+    usage: /tmute <player> <time> [by:whomuted] [reason]
+    permission: punishment.tmute
+  ipmute:
+    description: IP-mute a player
+    usage: /ipmute <player> [by:whomuted] [reason]
+    permission: punishment.ipmute
+  iptmute:
+    description: Temporarily IP-mute a player
+    usage: /iptmute <player> <time> [by:whomuted] [reason]
+    permission: punishment.iptmute
+  smute:
+    description: Silently mute a player
+    usage: /smute <player> [by:whomuted] [reason]
+    permission: punishment.smute
+  stmute:
+    description: Silently temporarily mute a player
+    usage: /stmute <player> <time> [by:whomuted] [reason]
+    permission: punishment.stmute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player> [by:unmuted_by] [reason]
+    permission: punishment.unmute
+  sunmute:
+    description: Silently unmute a player
+    usage: /sunmute <player> [by:unmuted_by]
+    permission: punishment.sunmute
+  overallbans:
+    description: Show OverallBans help and commands
+    usage: /overallbans
+    permission: punishment.help
+  check:
+    description: Check active punishments for a player (opens GUI)
+    usage: /check <player>
+    permission: punishment.check
+  ob:
+    description: Show OverallBans help and commands
+    usage: /ob [reload]
+    permission: punishment.editor
+  obg:
+    description: Open the OverallBans GUI editor
+    usage: /obg
+    permission: punishment.editor
+
+permissions:
+  punishment.*:
+    description: Grants all punishment permissions
+    children:
+      punishment.ban: true
+      punishment.tban: true
+      punishment.ipban: true
+      punishment.iptban: true
+      punishment.sban: true
+      punishment.stban: true
+      punishment.ipsban: true
+      punishment.ipstban: true
+      punishment.unban: true
+      punishment.sunban: true
+      punishment.kick: true
+      punishment.mute: true
+      punishment.tmute: true
+      punishment.ipmute: true
+      punishment.iptmute: true
+      punishment.smute: true
+      punishment.stmute: true
+      punishment.unmute: true
+      punishment.sunmute: true
+      punishment.help: true
+      punishment.check: true
+      punishment.editor: true
+      punishment.reload: true
+      punishment.antispam.bypass: true
+  punishment.ban:
+    description: Allows /ban
+    default: op
+  punishment.tban:
+    description: Allows /tban
+    default: op
+  punishment.ipban:
+    description: Allows /ipban
+    default: op
+  punishment.iptban:
+    description: Allows /iptban
+    default: op
+  punishment.sban:
+    description: Allows /sban
+    default: op
+  punishment.stban:
+    description: Allows /stban
+    default: op
+  punishment.ipsban:
+    description: Allows /ipsban
+    default: op
+  punishment.ipstban:
+    description: Allows /ipstban
+    default: op
+  punishment.unban:
+    description: Allows /unban
+    default: op
+  punishment.sunban:
+    description: Allows /sunban
+    default: op
+  punishment.kick:
+    description: Allows /kick
+    default: op
+  punishment.mute:
+    description: Allows /mute
+    default: op
+  punishment.tmute:
+    description: Allows /tmute
+    default: op
+  punishment.ipmute:
+    description: Allows /ipmute
+    default: op
+  punishment.iptmute:
+    description: Allows /iptmute
+    default: op
+  punishment.smute:
+    description: Allows /smute
+    default: op
+  punishment.stmute:
+    description: Allows /stmute
+    default: op
+  punishment.unmute:
+    description: Allows /unmute
+    default: op
+  punishment.sunmute:
+    description: Allows /sunmute
+    default: op
+  punishment.help:
+    description: Allows /overallbans help
+    default: true
+  punishment.check:
+    description: Allows /check
+    default: op
+  punishment.editor:
+    description: Allows /ob (opens the GUI)
+    default: op
+  punishment.reload:
+    description: Allows reloading the config
+    default: op
+  punishment.antispam.bypass:
+    description: Bypass anti-spam detection
+    default: op
